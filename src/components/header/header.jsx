@@ -2,7 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Header = () => {
-   Image.addEventListener("click", myFunction);
+   let lol = document.getElementById("foo");
+
+   lol.addEventListener("click", myFunction);
 
   function myFunction() {
     alert("Hello World!");
@@ -11,7 +13,7 @@ export const Header = () => {
     <header>
       <div>
         <div className="topNav">
-          <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
+          <Image id="foo"alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
           
           <nav>
             <ul>
