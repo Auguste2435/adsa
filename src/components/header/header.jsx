@@ -2,11 +2,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Header = () => {
+   const handleClick = () => {
+    <Link href="/" passHref>
+      <a> Home</a>
+    </Link>
+  }
   return (
     <header>
       <div>
         <div className="topNav">
-          <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
+          <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} onClick={handleClick} />
+          
           <nav>
             <ul>
               <li>
