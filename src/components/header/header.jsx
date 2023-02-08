@@ -2,13 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Header = () => {
-   let lol = document.getElementById("foo");
+   const lol = document.querySelector('Image');
 
-   lol.addEventListener("click", myFunction);
+   lol.addEventListener('onclick', () => {
 
-  function myFunction() {
     alert("Hello World!");
-  }
+  });
   return (
     <header>
       <div>
