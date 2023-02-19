@@ -2,18 +2,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Header = () => {
-   const lol = document.querySelector('Image');
-
-   lol.addEventListener('onclick', () => {
-
-    alert("Hello World!");
-  });
   return (
     <header>
       <div>
         <div className="topNav">
-          <Image id="foo"alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
-          
+          <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
           <nav>
             <ul>
               <li>
